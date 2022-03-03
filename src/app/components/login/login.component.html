@@ -1,0 +1,27 @@
+<div class="flex justify-center items-center mt-20">
+  <div class="flex flex-col justify-center items-center border-2 px-20 py-10">
+    <h1 class="text-center w-full text-xl mb-4">Log in to Tweet With Jitter</h1>
+    <div class="mt-4 space-y-6">
+    <label class="relative text-gray-400 focus-within:text-gray-600 block">
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+      </svg>
+
+      <input type="email" name="email" id="email" placeholder="Email" class="form-input border border-gray-900 py-3 px-4 bg-white placeholder-gray-400 text-gray-500 appearance-none w-full block pl-14 focus:outline-none">
+</label>
+<label class="relative text-gray-400 focus-within:text-gray-600 block">
+  <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none w-8 h-8 absolute top-1/2 transform -translate-y-1/2 left-3" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+  </svg>
+
+  <input type="password" name="password" id="password" placeholder="Password" class="form-input border border-gray-900 py-3 px-4 bg-white placeholder-gray-400 text-gray-500 appearance-none w-full block pl-14 focus:outline-none">
+</label>
+<button class="w-full py-3 text-white bg-blue-600" [routerLink]="['/posts']">Log in</button>
+<p class="text-sm text-center">or <span class="text-blue-600 cursor-pointer" >Forgot Password</span></p>
+</div>
+  </div>
+
+</div>
+

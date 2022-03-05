@@ -13,4 +13,7 @@ export class PostsService {
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts')
   }
+  getComments(id: number): Observable<Comment[]> {
+    return this.http.get<Comment[]>(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
+  }
 }
